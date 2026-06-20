@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #00e676; /* vibrant green */
+    --bg-dark: #0f172a; /* slate-900 */
+    --bg-darker: #020617; /* slate-950 */
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-theme {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #00c853;
+    border-color: #00c853;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+}
+
+.bg-darker {
+    background-color: var(--bg-darker) !important;
+}
+
+.bg-light-section {
+    background-color: #f1f5f9 !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.1em;
+}
+
+/* Glassmorphism */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.8) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Card (Light theme specifically inside a section) */
+.course-card {
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px; /* Offset for navbar */
+    background: radial-gradient(circle at 15% 50%, rgba(0, 230, 118, 0.08), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(0, 230, 118, 0.05), transparent 25%);
+}
+
+.badge-custom {
+    display: inline-block;
+    padding: 0.35em 0.8em;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: rgba(0, 230, 118, 0.1);
+    border-radius: 50rem;
+    letter-spacing: 0.05em;
+}
+
+/* Code Window */
+.code-window {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.window-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.filename {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.window-body {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.window-body pre {
+    margin: 0;
+}
+
+.window-body code {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+.language-python .keyword { color: #ff7b72; }
+.language-python .function { color: #d2a8ff; }
+.language-python .comment { color: #8b949e; font-style: italic; }
+
+.window-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-top: 1px solid var(--glass-border);
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    color: var(--text-light) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #1e293b !important;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 230, 118, 0.25);
+}
+
+.form-control::placeholder {
+    color: #64748b;
+}
+
+.z-index-10 {
+    z-index: 10;
+}

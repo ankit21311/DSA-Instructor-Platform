@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit - DSA Instructor & Mentor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="dark-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">&lt;Ankit.dsa/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="btn btn-primary btn-sm rounded-pill px-3 py-2 fw-semibold">Book Free Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-text">
+                    <div class="badge-custom mb-3"><i class="bi bi-circle-fill me-2 text-primary"></i>DSA INSTRUCTOR & MENTOR</div>
+                    <h1 class="display-4 fw-bold mb-4">Master DSA. Crack <span class="text-primary">interviews.</span> Land the offer.</h1>
+                    <p class="lead mb-5 text-muted">Structured DSA roadmaps, mock interviews, and 1:1 mentorship from real industry experience.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold">Book Free Call</a>
+                        <a href="#courses" class="btn btn-outline-light rounded-pill px-4 py-3 fw-semibold">Explore Courses</a>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <h3 class="fw-bold text-primary">500+</h3>
+                            <p class="small text-muted mb-0">Students Mentored</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-primary">150+</h3>
+                            <p class="small text-muted mb-0">Students Placed</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-primary">4+ yrs</h3>
+                            <p class="small text-muted mb-0">Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="code-window glass-card">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="filename">two_sum.py</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code class="language-python">
+<span class="comment"># find two numbers that sum to target</span>
+<span class="keyword">def</span> <span class="function">two_sum</span>(nums, target):
+    seen = {}
+    <span class="keyword">for</span> i, n <span class="keyword">in</span> <span class="function">enumerate</span>(nums):
+        complement = target - n
+        <span class="keyword">if</span> complement <span class="keyword">in</span> seen:
+            <span class="keyword">return</span> [seen[complement], i]
+        seen[n] = i
+                            </code></pre>
+                        </div>
+                        <div class="window-footer d-flex justify-content-between">
+                            <span class="text-muted small">Time: O(n)</span>
+                            <span class="text-success small"><i class="bi bi-check-lg"></i> Accepted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="achievements-section py-5 border-top border-bottom border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h2 class="fw-bold text-primary">150+</h2>
+                    <p class="text-muted mb-0">Placed</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0 border-start border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+                    <h2 class="fw-bold text-primary">40+</h2>
+                    <p class="text-muted mb-0">Companies</p>
+                </div>
+                <div class="col-6 col-md-3 border-start border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+                    <h2 class="fw-bold text-primary">1200+</h2>
+                    <p class="text-muted mb-0">DSA Sessions</p>
+                </div>
+                <div class="col-6 col-md-3 border-start border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+                    <h2 class="fw-bold text-primary">600+</h2>
+                    <p class="text-muted mb-0">Mock Interviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Meet Your Mentor</h2>
+                    <p class="lead text-muted">I help students and professionals build strong foundations in Data Structures and Algorithms and crack top tech company interviews.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="glass-card p-4 rounded-4 h-100 text-center">
+                        <div class="avatar-placeholder mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white" style="width: 150px; height: 150px; font-size: 3rem;">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <h3 class="fw-bold">Ankit</h3>
+                        <p class="text-primary mb-2">Senior DSA Instructor</p>
+                        <p class="text-muted small">Specializing in competitive programming and interview prep.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4">
+                                <i class="bi bi-briefcase text-primary fs-2 mb-3"></i>
+                                <h5>Industry Experience</h5>
+                                <p class="text-muted small mb-0">Real-world software engineering experience at top tech firms, bringing practical knowledge to theoretical concepts.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4">
+                                <i class="bi bi-people text-primary fs-2 mb-3"></i>
+                                <h5>Mentorship Focus</h5>
+                                <p class="text-muted small mb-0">Personalized learning paths tailored to your current level and target companies.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4">
+                                <i class="bi bi-graph-up-arrow text-primary fs-2 mb-3"></i>
+                                <h5>Placement Strategy</h5>
+                                <p class="text-muted small mb-0">Comprehensive guidance covering resume building, behavioral rounds, and technical deep-dives.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4">
+                                <i class="bi bi-code-slash text-primary fs-2 mb-3"></i>
+                                <h5>Code Review</h5>
+                                <p class="text-muted small mb-0">Line-by-line analysis of your solutions focusing on time/space complexity and clean code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light-section" id="courses">
+        <div class="container py-5">
+            <h6 class="text-primary fw-bold tracking-wide mb-4">COURSE OFFERINGS</h6>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-card bg-white p-4 rounded-4 h-100">
+                        <p class="text-primary small fw-bold tracking-wide mb-2">FOUNDATION</p>
+                        <h4 class="fw-bold text-dark mb-4">DSA Foundation</h4>
+                        <ul class="list-unstyled text-muted small lh-lg">
+                            <li><i class="bi bi-dot text-primary"></i> Arrays & Strings</li>
+                            <li><i class="bi bi-dot text-primary"></i> Linked List</li>
+                            <li><i class="bi bi-dot text-primary"></i> Stacks & Queues</li>
+                            <li><i class="bi bi-dot text-primary"></i> Trees & Graphs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-card bg-white p-4 rounded-4 h-100">
+                        <p class="text-primary small fw-bold tracking-wide mb-2">PLACEMENT</p>
+                        <h4 class="fw-bold text-dark mb-4">Placement Prep</h4>
+                        <ul class="list-unstyled text-muted small lh-lg">
+                            <li><i class="bi bi-dot text-primary"></i> DSA Roadmap</li>
+                            <li><i class="bi bi-dot text-primary"></i> Company-wise Questions</li>
+                            <li><i class="bi bi-dot text-primary"></i> Interview Preparation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-card bg-white p-4 rounded-4 h-100">
+                        <p class="text-primary small fw-bold tracking-wide mb-2">COMPETITIVE</p>
+                        <h4 class="fw-bold text-dark mb-4">Comp. Programming</h4>
+                        <ul class="list-unstyled text-muted small lh-lg">
+                            <li><i class="bi bi-dot text-primary"></i> Codeforces Training</li>
+                            <li><i class="bi bi-dot text-primary"></i> Leetcode Patterns</li>
+                            <li><i class="bi bi-dot text-primary"></i> Contest Preparation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-card bg-white p-4 rounded-4 h-100">
+                        <p class="text-primary small fw-bold tracking-wide mb-2">INTERVIEW</p>
+                        <h4 class="fw-bold text-dark mb-4">Mock Interviews</h4>
+                        <ul class="list-unstyled text-muted small lh-lg">
+                            <li><i class="bi bi-dot text-primary"></i> DSA Mock</li>
+                            <li><i class="bi bi-dot text-primary"></i> Resume Review</li>
+                            <li><i class="bi bi-dot text-primary"></i> HR Round Guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="testimonials">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Student Success Stories</h2>
+                <p class="text-muted">Don't just take my word for it.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card p-4 rounded-4 h-100">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic">"The placement prep course completely changed my approach to problem solving. The mock interviews were incredibly close to the real thing."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="rounded-circle bg-primary me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Rahul S.</h6>
+                                <p class="small text-muted mb-0">Placed at Amazon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 rounded-4 h-100">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic">"Ankit's way of explaining complex graph algorithms is unmatched. I went from struggling with basic trees to solving hard Leetcode problems."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="rounded-circle bg-primary me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Priya M.</h6>
+                                <p class="small text-muted mb-0">Placed at Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 rounded-4 h-100">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted fst-italic">"The 1:1 mentorship provided me with a clear roadmap. The resume review alone was worth it, helping me get shortlisted at top product companies."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="rounded-circle bg-primary me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Amit K.</h6>
+                                <p class="small text-muted mb-0">Placed at Microsoft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-darker" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Ready to start your journey?</h2>
+                    <p class="text-muted mb-4">Fill out the form below to book a free career guidance call or inquire about courses.</p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email Me Directly</h6>
+                            <a href="mailto:ankit.raj.138367@gmail.com" class="text-primary text-decoration-none">ankit.raj.138367@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="bi bi-geo-alt-fill fs-5"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Location</h6>
+                            <span class="text-muted">Remote / Online</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="glass-card p-4 p-md-5 rounded-4 position-relative">
+                        <div id="success-message" class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark bg-opacity-75 rounded-4 d-none z-index-10" style="backdrop-filter: blur(5px);">
+                            <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                            <h4 class="text-white mt-3 fw-bold">Success!</h4>
+                            <p class="text-center text-light px-4">Thank you for reaching out. Your inquiry has been submitted successfully.</p>
+                            <p class="text-center text-light small mb-4">Contact directly: <a href="mailto:ankit.raj.138367@gmail.com" class="text-primary">ankit.raj.138367@gmail.com</a></p>
+                            <a href="mailto:ankit.raj.138367@gmail.com" class="btn btn-primary rounded-pill px-4">Contact via Email</a>
+                            <button id="close-success" class="btn btn-link text-light mt-2 text-decoration-none small">Close</button>
+                        </div>
+                        
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">Full Name *</label>
+                                    <input type="text" class="form-control bg-dark border-secondary text-light" id="fullName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">Email *</label>
+                                    <input type="email" class="form-control bg-dark border-secondary text-light" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">Phone Number *</label>
+                                    <input type="tel" class="form-control bg-dark border-secondary text-light" id="phone" pattern="[0-9]{10,15}" title="Please enter a valid phone number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">College Name *</label>
+                                    <input type="text" class="form-control bg-dark border-secondary text-light" id="college" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">Current Year *</label>
+                                    <select class="form-select bg-dark border-secondary text-light" id="year" required>
+                                        <option value="" disabled selected>Select Year</option>
+                                        <option value="1st Year">1st Year</option>
+                                        <option value="2nd Year">2nd Year</option>
+                                        <option value="3rd Year">3rd Year</option>
+                                        <option value="4th Year">4th Year</option>
+                                        <option value="Passed Out">Passed Out</option>
+                                        <option value="Working Professional">Working Professional</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-light small">Target Company</label>
+                                    <input type="text" class="form-control bg-dark border-secondary text-light" id="targetCompany" placeholder="e.g. Google, Amazon">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-light small">Message / Goal *</label>
+                                    <textarea class="form-control bg-dark border-secondary text-light" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold" id="submitBtn">
+                                        Submit Inquiry
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 border-top border-secondary text-center" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="container">
+            <p class="text-muted small mb-0">&copy; 2024 Ankit DSA. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/main.js"></script>
+</body>
+</html>
